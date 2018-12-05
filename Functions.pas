@@ -68,12 +68,12 @@ begin
   case AType of
     // make larger
     TLarger:
-      AForm.scaleby(trunc(ratio * 50), 60);
+      AForm.scaleby(trunc(ratio * 50), 40);
     // make smaller
     TSmaller:
-      AForm.scaleby(trunc(ratio * 50), 75);
+      AForm.scaleby(trunc(ratio * 50), 60);
   end;
-
+  
   // to centre the form on the screen
   AForm.Left := CentreLeft(AForm.width);
   AForm.Top := CentreTop(AForm.Height);
